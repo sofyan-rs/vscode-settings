@@ -1,0 +1,115 @@
+{
+  // Open json editor for settings
+  "workbench.settings.editor": "json",
+
+  // Font
+  "editor.fontFamily": "Dank Mono, Monolisa",
+  "scm.inputFontFamily": "Dank Mono, Monolisa",
+  "terminal.integrated.fontFamily": "Dank Mono, Monolisa",
+  "chat.editor.fontFamily": "Dank Mono, Monolisa",
+  "debug.console.fontFamily": "Dank Mono, Monolisa",
+  "editor.codeLensFontFamily": "Dank Mono, Monolisa",
+  "notebook.output.fontFamily": "Dank Mono, Monolisa",
+  "markdown.preview.fontFamily": "Dank Mono, Monolisa",
+  "editor.inlayHints.fontFamily": "Dank Mono, Monolisa",
+  "editor.fontLigatures": true,
+
+  // Font Size
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
+
+  // UI
+  "window.zoomLevel": 0.6,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "auto",
+  "window.commandCenter": false,
+  // "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.iconTheme": "moxer-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.productIconTheme": "icons-kamekazi-dark",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "bottom",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.colorCustomizations": {
+    "editorSuggestWidget.selectedBackground": "#231739",
+    "sideBar.background": "#191521",
+    "list.activeSelectionBackground": "#231739",
+    "list.inactiveSelectionBackground": "#231739",
+    "list.focusBackground": "#231739",
+    "list.hoverBackground": "#231739",
+    "terminalCursor.foreground": "#C45DFF"
+  },
+
+  // Formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.codeActionsOnSave": ["source.formatDocument"],
+
+  // Copilot
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false,
+    "typescriptreact": true
+  },
+
+  // Misc
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.autoSave": "afterDelay",
+  "explorer.compactFolders": false,
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+
+  // SDK
+  "dart.sdkPath": "C:\\tools\\dart-sdk\\bin",
+  "dart.flutterSdkPath": "C:\\dev\\flutter",
+
+  // Flutter
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [100],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+
+  // Svelte
+  "svelte.enable-ts-plugin": true,
+
+  // APC Config
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset"
+  },
+  "apc.font.family": "Dank Mono",
+  "apc.menubar.compact": true,
+  "apc.stylesheet": {
+    ".sidebar .title-label": "padding: 0 0 0 5px !important",
+    ".sidebar": "border: none !important"
+  }
+}
