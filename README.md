@@ -3,9 +3,9 @@
 Here is my vscode setting I use on my daily.
 
 ```
-Font             : MonoLisa
-Theme            : Minimal
-File Icon        : moxer-icons
+Font             : Cascadia Mono NF
+Theme            : Minimal Dark
+File Icon        : Symbol
 Terminal Profile : ZSH
 ```
 
