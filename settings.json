@@ -4,24 +4,50 @@
   "update.enableWindowsBackgroundUpdates": false,
 
   // Font
-  "editor.fontFamily": "MonoLisa",
-  "scm.inputFontFamily": "MonoLisa",
-  "terminal.integrated.fontFamily": "MonoLisa",
-  "chat.editor.fontFamily": "MonoLisa",
-  "debug.console.fontFamily": "MonoLisa",
-  "editor.codeLensFontFamily": "MonoLisa",
-  "notebook.output.fontFamily": "MonoLisa",
-  "markdown.preview.fontFamily": "MonoLisa",
-  "editor.inlayHints.fontFamily": "MonoLisa",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "Cascadia Code NF",
+  "terminal.integrated.fontFamily": "Cascadia Code NF",
+  "editor.fontLigatures": "'calt', 'ss01'",
   "editor.lineHeight": 2.2,
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
-  // "editor.detectIndentation": true,
-  // "editor.indentSize": "tabSize",
-
-  // "prettier.useTabs": true,
-  // "prettier.tabWidth": 1,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "entity.name.method.js",
+          "entity.name.class.js",
+          "entity.name.tag.doctype",
+          "entity.other.attribute-name",
+          "entity.other.attribute-name.tag.jade",
+          "entity.other.attribute-name.tag.pug"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
 
   // UI
   "workbench.colorTheme": "Min Dark",
@@ -29,7 +55,6 @@
   "workbench.layoutControl.enabled": true,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.editor.showTabs": "multiple",
-  // "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "workbench.tree.indent": 12,
@@ -40,35 +65,14 @@
   "editor.wordWrap": "on",
   "window.titleBarStyle": "custom",
   "window.commandCenter": false,
-  "window.menuBarVisibility": "classic",
   "window.customTitleBarVisibility": "auto",
   "symbols.hidesExplorerArrows": true,
-  "glassit.alpha": 250,
   "explorer.compactFolders": true,
   "editor.linkedEditing": true,
   "files.trimTrailingWhitespace": true,
   "workbench.settings.applyToAllProfiles": ["window.zoomLevel"],
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-
-  // Misc
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "settingsSync.ignoredSettings": ["-window.zoomLevel"],
-  "git.confirmSync": false,
-  "files.autoSave": "afterDelay",
-  "update.mode": "manual",
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
-  "explorer.confirmDragAndDrop": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "react-native-tools.showUserTips": false,
-  "dart.openDevTools": "flutter",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "git.openRepositoryInParentFolders": "never",
 
   // Formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -99,11 +103,29 @@
 
   // Svelte
   "svelte.enable-ts-plugin": true,
-  "dart.debugExternalPackageLibraries": true,
-  "dart.debugSdkLibraries": true,
+
+  // Misc
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "settingsSync.ignoredSettings": ["-window.zoomLevel"],
+  "git.confirmSync": false,
+  "files.autoSave": "afterDelay",
+  "update.mode": "manual",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "never",
   "terminal.integrated.gpuAcceleration": "on",
   "editor.accessibilitySupport": "off",
   "workbench.sideBar.location": "right",
   "database-client.autoSync": true,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "dart.openDevTools": "flutter",
   "dart.flutterSdkPath": "/Users/sofyan/Dev/env/flutter"
 }
