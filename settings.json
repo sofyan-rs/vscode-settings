@@ -1,26 +1,28 @@
 {
-  // Open json editor for settings
-  "workbench.settings.editor": "json",
-  "update.enableWindowsBackgroundUpdates": false,
-
-  // Font
-  "editor.fontFamily": "Cascadia Code NF",
-  "terminal.integrated.fontFamily": "Cascadia Code NF",
+  // ── Editor ────────────────────────────────────────────────
+  "editor.fontFamily": "CaskaydiaCove Nerd Font Propo",
   "editor.fontLigatures": "'calt', 'ss01'",
-  "editor.lineHeight": 2.2,
   "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
+  "editor.lineHeight": 2.2,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.renderLineHighlight": "none",
+  "editor.wordWrap": "on",
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.accessibilitySupport": "off",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": [
-          //following will be in italic (=FlottFlott)
           "comment",
-          "entity.name.type.class", //class names
-          "keyword", //import, export, return…
-          "constant", //String, Number, Boolean…, this, super
-          "storage.modifier", //static keyword
-          "storage.type.class.js", //class keyword
+          "entity.name.type.class",
+          "keyword",
+          "constant",
+          "storage.modifier",
+          "storage.type.class.js",
           "entity.name.method.js",
           "entity.name.class.js",
           "entity.name.tag.doctype",
@@ -28,13 +30,10 @@
           "entity.other.attribute-name.tag.jade",
           "entity.other.attribute-name.tag.pug"
         ],
-        "settings": {
-          "fontStyle": "italic"
-        }
+        "settings": { "fontStyle": "italic" }
       },
       {
         "scope": [
-          //following will be excluded from italics (VSCode has some defaults for italics)
           "invalid",
           "keyword.operator",
           "constant.numeric.css",
@@ -42,55 +41,123 @@
           "constant.numeric.decimal.js",
           "constant.numeric.json"
         ],
-        "settings": {
-          "fontStyle": ""
-        }
+        "settings": { "fontStyle": "" }
       }
     ]
   },
 
-  // UI
-  "workbench.colorTheme": "Min Dark",
-  "workbench.iconTheme": "symbols",
-  "workbench.layoutControl.enabled": true,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.editor.showTabs": "multiple",
-  "workbench.startupEditor": "none",
-  "workbench.tips.enabled": false,
-  "workbench.tree.indent": 12,
-  "editor.minimap.enabled": false,
-  "editor.scrollbar.vertical": "auto",
-  "editor.scrollbar.horizontal": "auto",
-  "editor.renderLineHighlight": "none",
-  "editor.wordWrap": "on",
-  "window.titleBarStyle": "custom",
-  "window.commandCenter": false,
-  "window.customTitleBarVisibility": "auto",
-  "symbols.hidesExplorerArrows": true,
-  "explorer.compactFolders": true,
-  "editor.linkedEditing": true,
-  "files.trimTrailingWhitespace": true,
-  "workbench.settings.applyToAllProfiles": ["window.zoomLevel"],
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-
-  // Formatter
+  // ── Formatter ─────────────────────────────────────────────
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.codeActionsOnSave": ["source.formatDocument"],
 
-  // Copilot
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false,
-    "yaml": false,
-    "typescriptreact": true
+  // ── Workbench ─────────────────────────────────────────────
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "Horizon Italic",
+  "workbench.iconTheme": "symbols",
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.settings.applyToAllProfiles": ["window.zoomLevel"],
+  "workbench.colorCustomizations": {
+    "[Vira*]": {
+      "toolbar.activeBackground": "#80CBC426",
+      "button.background": "#80CBC4",
+      "button.hoverBackground": "#80CBC4cc",
+      "button.foreground": "#000000",
+      "extensionButton.separator": "#80CBC433",
+      "extensionButton.background": "#80CBC414",
+      "extensionButton.foreground": "#80CBC4",
+      "extensionButton.hoverBackground": "#80CBC433",
+      "extensionButton.prominentForeground": "#80CBC4",
+      "extensionButton.prominentBackground": "#80CBC414",
+      "extensionButton.prominentHoverBackground": "#80CBC433",
+      "activityBarBadge.background": "#80CBC4",
+      "activityBarBadge.foreground": "#000000",
+      "activityBar.activeBorder": "#80CBC4",
+      "activityBarTop.activeBorder": "#80CBC4",
+      "list.activeSelectionForeground": "#80CBC4",
+      "list.activeSelectionIconForeground": "#80CBC4",
+      "list.inactiveSelectionForeground": "#80CBC4",
+      "list.inactiveSelectionIconForeground": "#80CBC4",
+      "list.highlightForeground": "#80CBC4",
+      "sash.hoverBorder": "#80CBC480",
+      "scrollbarSlider.activeBackground": "#80CBC480",
+      "editorSuggestWidget.highlightForeground": "#80CBC4",
+      "editorWidget.border": "#80CBC4",
+      "editorWidget.resizeBorder": "#80CBC4",
+      "textLink.foreground": "#80CBC4",
+      "progressBar.background": "#80CBC4",
+      "pickerGroup.foreground": "#80CBC4",
+      "tab.activeBorder": "#80CBC4",
+      "notificationLink.foreground": "#80CBC4",
+      "settings.modifiedItemIndicator": "#80CBC4",
+      "panelTitle.activeBorder": "#80CBC4",
+      "breadcrumb.activeSelectionForeground": "#80CBC4",
+      "menu.selectionForeground": "#80CBC4",
+      "menubar.selectionForeground": "#80CBC4",
+      "editor.findMatchBorder": "#80CBC4",
+      "selection.background": "#80CBC440",
+      "statusBarItem.remoteBackground": "#80CBC414",
+      "statusBarItem.remoteForeground": "#80CBC4",
+      "statusBarItem.remoteHoverBackground": "#80CBC4",
+      "statusBarItem.remoteHoverForeground": "#000000",
+      "notebook.inactiveFocusedCellBorder": "#80CBC480",
+      "commandCenter.activeBorder": "#80CBC480",
+      "chat.slashCommandForeground": "#80CBC4",
+      "chat.avatarForeground": "#80CBC4"
+    }
   },
-  "dart.previewFlutterUiGuides": true,
-  "dart.previewFlutterUiGuidesCustomTracking": true,
+
+  // ── Window ────────────────────────────────────────────────
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "auto",
+
+  // ── Explorer ──────────────────────────────────────────────
+  "explorer.compactFolders": true,
+  "explorer.confirmDragAndDrop": false,
+  "symbols.hidesExplorerArrows": true,
+
+  // ── Files & Git ───────────────────────────────────────────
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  "settingsSync.ignoredSettings": ["-window.zoomLevel"],
+  "update.mode": "manual",
+
+  // ── Terminal ──────────────────────────────────────────────
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Propo",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
+
+  // ── Language: Dart/Flutter ────────────────────────────────
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -100,32 +167,35 @@
     "editor.wordBasedSuggestions": "off",
     "editor.suggestSelection": "first"
   },
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.openDevTools": "flutter",
+  "dart.mcpServer": true,
 
-  // Svelte
-  "svelte.enable-ts-plugin": true,
-
-  // Misc
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "settingsSync.ignoredSettings": ["-window.zoomLevel"],
-  "git.confirmSync": false,
-  "files.autoSave": "afterDelay",
-  "update.mode": "manual",
+  // ── Language: Markdown ────────────────────────────────────
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "explorer.confirmDragAndDrop": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // ── Extensions ────────────────────────────────────────────
+  "svelte.enable-ts-plugin": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "git.openRepositoryInParentFolders": "never",
-  "terminal.integrated.gpuAcceleration": "on",
-  "editor.accessibilitySupport": "off",
-  "workbench.sideBar.location": "right",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "typescriptreact": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
   "database-client.autoSync": true,
-  "dart.debugExternalPackageLibraries": true,
-  "dart.debugSdkLibraries": true,
-  "dart.openDevTools": "flutter",
-  "dart.flutterSdkPath": "/Users/sofyan/Dev/env/flutter"
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "chat.mcp.gallery.enabled": true
 }
